@@ -42,5 +42,8 @@ args = my_parser.parse_args()
 print(args)
 print(args.which)
 
-from files_package import file_utility
-print(file_utility.fun(3,7))
+if args.which=='sort':
+    from files_package import file_utility
+    file_utility.sort_files(args.dir_path,args.sort_by)
+
+
