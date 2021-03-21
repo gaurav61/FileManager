@@ -39,8 +39,6 @@ pdf_crop_parser.add_argument('out_path',action='store')
 pdf_crop_parser.set_defaults(which='crop_pdf')
 
 args = my_parser.parse_args()
-print(args)
-print(args.which)
 
 if args.which=='sort':
     from files_package import file_utility
