@@ -43,5 +43,11 @@ args = my_parser.parse_args()
 if args.which=='sort':
     from files_package import file_utility
     file_utility.sort_files(args.dir_path,args.sort_by)
+elif args.which=='merge_pdf':
+    from pdf_package import pdf_utility
+    pdf_utility.PDF_merger(args.pdf_list,args.out_path)
+elif args.which=='crop_pdf':
+    from pdf_package import pdf_utility
+    pdf_utility.PDF_croper(args.pdf_path,args.s,args.e,args.out_path)
 
 
