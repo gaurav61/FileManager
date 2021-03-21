@@ -49,5 +49,8 @@ elif args.which=='merge_pdf':
 elif args.which=='crop_pdf':
     from pdf_package import pdf_utility
     pdf_utility.PDF_croper(args.pdf_path,args.s,args.e,args.out_path)
+elif args.which=='resize_image':
+    from image_package import image_utility
+    image_utility.image_resizer(args.image_path,args.h,args.w,args.out_path)
 
 
