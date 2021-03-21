@@ -20,16 +20,10 @@ resize_parser.add_argument('image_path',action='store')
 resize_parser.add_argument('out_path',action='store')
 resize_parser.set_defaults(which='resize_image')
 
-filter_parser = subparser.add_parser('filter_image', help='Apply various filters to an input image')
-filter_parser.add_argument('image_path',action='store')
-filter_parser.add_argument('filter_name',action='store',choices=['f1','f2'])
-filter_parser.add_argument('out_path',action='store')
-filter_parser.set_defaults(which='filter_image')
-
-download_parser = subparser.add_parser('download_image', help='Download an image')
+download_parser = subparser.add_parser('compress_image', help='Compress an image')
 download_parser.add_argument('image_path',action='store')
 download_parser.add_argument('out_path',action='store')
-download_parser.set_defaults(which='download_image')
+download_parser.set_defaults(which='compress_image')
 
 pdf_crop_parser = subparser.add_parser('crop_pdf', help='Resize an input image')
 pdf_crop_parser.add_argument('--s',action='store',type=int)
@@ -52,5 +46,7 @@ elif args.which=='crop_pdf':
 elif args.which=='resize_image':
     from image_package import image_utility
     image_utility.image_resizer(args.image_path,args.h,args.w,args.out_path)
-
+elif args.which=='compress_image':
+    from image_package import image_utility
+    image_utility.image_compressor(args.image_path,args.out_path)
 

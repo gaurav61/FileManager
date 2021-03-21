@@ -17,3 +17,7 @@ def image_resizer(input_path,h,w,output_path):
     else:
         img = img.resize((w,h),Image.ANTIALIAS)
         img.save(output_path)
+
+def image_compressor(input_path,output_path):
+    img = Image.open(input_path)
+    img.save(output_path,optimize=True,quality=75)
