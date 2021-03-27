@@ -35,18 +35,18 @@ pdf_crop_parser.set_defaults(which='crop_pdf')
 args = my_parser.parse_args()
 
 if args.which=='sort':
-    from files_package import file_utility
+    import file_utility
     file_utility.sort_files(args.dir_path,args.sort_by)
 elif args.which=='merge_pdf':
-    from pdf_package import pdf_utility
+    import pdf_utility
     pdf_utility.PDF_merger(args.pdf_list,args.out_path)
 elif args.which=='crop_pdf':
-    from pdf_package import pdf_utility
+    import pdf_utility
     pdf_utility.PDF_croper(args.pdf_path,args.s,args.e,args.out_path)
 elif args.which=='resize_image':
-    from image_package import image_utility
+    import image_utility
     image_utility.image_resizer(args.image_path,args.h,args.w,args.out_path)
 elif args.which=='compress_image':
-    from image_package import image_utility
+    import image_utility
     image_utility.image_compressor(args.image_path,args.out_path)
 
