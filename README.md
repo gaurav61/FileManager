@@ -29,10 +29,16 @@
 ### Sort Files
 * Sort files in a directory based on the file extension
 	```
-    $ filezilla sort <PATH_TO_THE_DIRECTORY> ext
+    $ filezilla sort <ABSOLUTE_PATH_OF_THE_DIRECTORY> ext
     ```
 
 * Sort files in a directory based on the file size
 	```
-    $ filezilla sort <PATH_TO_THE_DIRECTORY> size
+    $ filezilla sort <ABSOLUTE_PATH_OF_THE_DIRECTORY> size
+    ```
+
+### Merge PDFs
+* Concatenate multiple PDFs into a single PDF
+	```
+    $ filezilla merge_pdf <ABSOLUTE_PATH_OF_PDF_1> <ABSOLUTE_PATH_OF_PDF_2> ... <ABSOLUTE_PATH_OF_PDF_N> <ABSOLUTE_PATH_OF_OUTPUT_PDF_FILE
     ```
