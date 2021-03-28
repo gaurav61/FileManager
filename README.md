@@ -20,6 +20,7 @@
     ```
 
 ## Install from PyPI
+* Install using
 	```
     $ pip install filezilla
     ```
