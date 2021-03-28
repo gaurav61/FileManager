@@ -26,12 +26,13 @@
     ```
 
 ## Usage
+### Sort Files
 * Sort files in a directory based on the file extension
 	```
     $ filezilla sort <PATH_TO_THE_DIRECTORY> ext
     ```
 
-* Sort files in a directory based on the file extension
+* Sort files in a directory based on the file size
 	```
     $ filezilla sort <PATH_TO_THE_DIRECTORY> size
     ```
