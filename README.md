@@ -13,3 +13,10 @@
 	```
     $ cd FileManager
     ```
+
+* Install using
+	```
+    $ python3 setup.py install
+    ```
+
+## Install from PyPI
