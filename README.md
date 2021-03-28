@@ -24,3 +24,9 @@
 	```
     $ pip install filezilla
     ```
+
+## Usage
+* Sort files in a directory based on the file extension
+	```
+    $ filezilla sort <PATH_TO_THE_DIRECTORY> ext
+    ```
