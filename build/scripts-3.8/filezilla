@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if [[ ! $@ ]]; then
-	python3.8 -m filezilla -h
+	python3 -m filezilla -h
 else
-	python3.8 -m filezilla $@
+	python3 -m filezilla $@
 fi
