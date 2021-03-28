@@ -49,3 +49,10 @@
     $ filezilla crop_pdf <ABSOLUTE_PATH_OF_THE_PDF> --s <STARTING_PAGE_NUMBER> --e <ENDING_PAGE_NUMBER> <ABSOLUTE_PATH_OF_OUTPUT_PDF_FILE>
     ```
     The above command will create a new PDF and the new PDF will contain all the pages from page number 's' to 'e' both inclusive. If you don't pass 's' in the argument then its default value will be 1 and if you don't pass 'e' in the argument then its default value will be the last page number of the input PDF
+
+### Resize Image
+* Resize height and width of the Image
+	```
+    $ filezilla crop_pdf <ABSOLUTE_PATH_OF_THE_IMAGE> --h <HEIGHT> --w <WIDTH> <ABSOLUTE_PATH_OF_OUTPUT_IMAGE>
+    ```
+    The above command will create a new image and the new image will have height as 'h' and width  as 'w'. If you don't pass 'h' or 'w' then it will take those values from the original image.
