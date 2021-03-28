@@ -40,5 +40,12 @@
 ### Merge PDFs
 * Concatenate multiple PDFs into a single PDF
 	```
-    $ filezilla merge_pdf <ABSOLUTE_PATH_OF_PDF_1> <ABSOLUTE_PATH_OF_PDF_2> ... <ABSOLUTE_PATH_OF_PDF_N> <ABSOLUTE_PATH_OF_OUTPUT_PDF_FILE
+    $ filezilla merge_pdf <ABSOLUTE_PATH_OF_PDF_1> <ABSOLUTE_PATH_OF_PDF_2> ... <ABSOLUTE_PATH_OF_PDF_N> <ABSOLUTE_PATH_OF_OUTPUT_PDF_FILE>
     ```
+
+### Crop PDF
+* Extract pages from a PDF and create a new PDF of the extracted pages
+	```
+    $ filezilla crop_pdf <ABSOLUTE_PATH_OF_THE_PDF> --s <STARTING_PAGE_NUMBER> --e <ENDING_PAGE_NUMBER> <ABSOLUTE_PATH_OF_OUTPUT_PDF_FILE>
+    ```
+    The above command will create a new PDF and the new PDF will contain all the pages from page number 's' to 'e' both inclusive.
