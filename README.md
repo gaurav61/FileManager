@@ -56,3 +56,9 @@
     $ filezilla crop_pdf <ABSOLUTE_PATH_OF_THE_IMAGE> --h <HEIGHT> --w <WIDTH> <ABSOLUTE_PATH_OF_OUTPUT_IMAGE>
     ```
     The above command will create a new image and the new image will have height as 'h' and width  as 'w'. If you don't pass 'h' or 'w' then it will take those values from the original image.
+
+### Compress Image
+* Compress an Input Image
+	```
+    $ filezilla compress_image <ABSOLUTE_PATH_OF_THE_IMAGE> <ABSOLUTE_PATH_OF_OUTPUT_IMAGE>
+    ```
